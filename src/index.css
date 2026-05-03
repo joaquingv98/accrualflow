@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebe3d5;
+  color: #2d2926;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Superficies claras (landing editorial); el MVP oscuro sigue usando .glass / .glass-strong */
+  .editorial-glass {
+    background: rgba(255, 252, 248, 0.55);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(45, 41, 38, 0.08);
+  }
+
+  .editorial-glass-strong {
+    background: rgba(255, 252, 248, 0.9);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(45, 41, 38, 0.1);
+    box-shadow: 0 24px 48px -24px rgba(45, 41, 38, 0.2);
+  }
+
+  /* Solo padding horizontal: el vertical hace que cada línea clonada se solape en el interlineado */
+  .line-mark {
+    background-color: rgba(188, 168, 150, 0.42);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: 0 0.18em;
+  }
+
+  .glow-lime {
+    box-shadow: 0 0 40px rgba(45, 41, 38, 0.06), 0 20px 40px -24px rgba(45, 41, 38, 0.1);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 40px rgba(45, 212, 191, 0.15);
+  }
+
+  .text-gradient-lime {
+    background: linear-gradient(135deg, #b5f542, #2dd4bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ebe3d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4b8a8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a89b8c;
+}

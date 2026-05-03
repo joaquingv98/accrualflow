@@ -1,0 +1,11 @@
+CECO,Razón social (SAP-style),Objeto / texto período,Mes cierre (libre),Imp. EUR abierto,Gestor responsable,Cuenta G/L,Estado workflow
+ACC-07,Pixel Bloom Studio SL,OA revisión finanzas — Consultoría operativa — Abril 2026,Abril 2026,608.63,Laura Gómez,62002101,revisión_M
+ACC-08,Tide Marine Services Ltd,CTRL bridge accrual — Managed services,Q2 2026,2147.75,Carlos Muñoz,629888,ABIERTO_CTRL
+ACC-11,Helio Logistics SL,CTRL bridge accrual — Project milestone billing,Q2 2026,6765.11,Laura Gómez,63099010,ABIERTO_CTRL
+ACC-12,Nimbus Labs SL,OA revisión finanzas — March 2026 advisory delivered,March 2026,8304.23,Nina K.,63099010,OPEN
+ACC-17,Rentas Urbanas SL,Devengo pendiente cierre — Managed services,Q2 2026,5471.62,M. Soto,629888,revisión_M
+ACC-25,CleanPro Facilities SL,Devengo pendiente cierre — Consumo cloud facturación Mayo 2026,Mayo 2026,7256.37,Carlos Muñoz,61005500,ABIERTO_CTRL
+ACC-26,TechCore Solutions SL,Devengo pendiente cierre — Project milestone billing,FY26-P1,8795.49,IT Accruals,61005500,OPEN
+ACC-30,Aurora Catering SL,CTRL bridge accrual — Suministro energía período 2026-04-01 – 20,2026-04-01 – 2026-04-30,4423.76,Carlos Muñoz,63099010,OPEN
+ORP-XX,Helio Logistics SL,Cross-dock surge marzo (demo),marzo 2026,950.00,Nina K.,629888,CTRL_REVIEW
+ORP-XX,Nimbus Labs SL,Forecast model sprint Q2,Q2-2026,3243.00,FP&A Central,630900,WF_PENDING

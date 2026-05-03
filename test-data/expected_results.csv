@@ -1,0 +1,41 @@
+file_name,case_type,supplier_name,invoice_date,concept_summary,expected_service_period_detected,expected_accrual_month_or_period,expected_possible_multi_period_invoice,expected_requires_manual_review,expected_confidence,expected_reason
+01_no_per_emergency_repair_servi_70t40.pdf,no_period,Mint Softworks BV,2026-04-22,Emergency repair services,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+02_ambig_support_package_64n21.pdf,ambiguous,VoltAir Industrial SA,2026-03-12,Support package,false,not identified,no,true,low,Demo: wording ambiguo; revisión manual.
+03_clear_es_auditoria_interna_mayo_64362.pdf,clear_monthly_period,Rentas Urbanas SL,2026-05-15,Auditoría interna Mayo 2026,true,May 2026 / Mayo 2026,no,false,high,Demo: mes explícito (Mayo 2026).
+04_clear_es_waste_collection_abril_chir2.pdf,clear_monthly_period,Summit Beverages SL,2026-04-13,Waste collection Abril 2026,true,April 2026 / Abril 2026,no,false,high,Demo: mes explícito (Abril 2026).
+05_range_suministro_energia_per_2ga7c.pdf,clear_monthly_period,Summit Beverages SL,2026-05-27,Suministro energía período 2026-05-01 – 2026-05-31,true,2026-05-01 - 2026-05-31,no,false,high,Demo: rango ISO en concepto.
+06_ins_x_insurance_cover_01_06__4holv.pdf,multi_period,Beacon Telecom SL,2026-02-14,Insurance cover 01/06/2026 to 31/05/2027 — fleet policy,true,01/06/2026 - 31/05/2027,yes,true,high,Demo: póliza multi-ejercicio.
+07_clear_es_consultoria_operativa__fcw4m.pdf,clear_monthly_period,Pixel Bloom Studio SL,2026-04-06,Consultoría operativa — Abril 2026,true,April 2026 / Abril 2026,no,false,high,Demo: mes explícito (Abril 2026).
+08_ambig_managed_services_2nshz.pdf,ambiguous,Tide Marine Services Ltd,2026-03-08,Managed services,false,not identified,no,true,not_detected,Demo: wording ambiguo; revisión manual.
+09_no_per_router_swap_field_serv_ddxmb.pdf,no_period,Tide Marine Services Ltd,2026-04-17,Router swap — field service,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+10_range_suministro_energia_per_140tx.pdf,clear_monthly_period,Helio Logistics SL,2026-04-28,Suministro energía período 2026-04-01 – 2026-04-30,true,2026-04-01 - 2026-04-30,no,false,high,Demo: rango ISO en concepto.
+11_no_per_project_milestone_bill_9zhgy.pdf,no_period,Helio Logistics SL,2026-04-21,Project milestone billing,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+12_post_inv_march_2026_advisory_de_8hzwl.pdf,posterior_invoice_prior_service,Nimbus Labs SL,2026-05-05,March 2026 advisory delivered,true,March 2026,no,false,high,Demo: factura posterior al servicio declarado.
+13_quarter_platform_bundle_licens_azyx8.pdf,multi_period,Tide Marine Services Ltd,2026-10-05,Platform bundle license Q4 2026,true,Q4 2026,yes,false,high,Demo: trimestre fiscal explícito.
+14_ambig_support_package_eigwr.pdf,ambiguous,Shield Insurance SL,2026-03-14,Support package,false,not identified,no,true,low,Demo: wording ambiguo; revisión manual.
+15_quarter_platform_bundle_licens_6gsoz.pdf,multi_period,Mint Softworks BV,2026-07-11,Platform bundle license Q3 2026,true,Q3 2026,yes,true,high,Demo: trimestre fiscal explícito.
+16_clear_es_consultoria_operativa__773bd.pdf,clear_monthly_period,Shield Insurance SL,2026-03-18,Consultoría operativa — Marzo 2026,true,March 2026 / Marzo 2026,no,false,high,Demo: mes explícito (Marzo 2026).
+17_ambig_managed_services_1dq2b.pdf,ambiguous,Rentas Urbanas SL,2026-03-20,Managed services,false,not identified,no,true,low,Demo: wording ambiguo; revisión manual.
+18_annual_enterprise_saas_subscr_chjzo.pdf,multi_period,Nimbus Labs SL,2026-01-12,Enterprise SaaS subscription period 01/01/2026 - 31/12/2026,true,Annual 2026 (01/01/2026 - 31/12/2026),yes,true,high,Demo: contrato anual; periodificación manual.
+19_clear_es_outsourcing_nomina_ene_7zfmc.pdf,clear_monthly_period,Granite Security SL,2026-01-15,Outsourcing nómina Enero 2026,true,January 2026 / Enero 2026,no,false,high,Demo: mes explícito (Enero 2026).
+20_range_suministro_energia_per_w9kj.pdf,clear_monthly_period,Rentas Urbanas SL,2026-05-28,Suministro energía período 2026-05-01 – 2026-05-31,true,2026-05-01 - 2026-05-31,no,false,high,Demo: rango ISO en concepto.
+21_clear_es_licencias_software_per_586i0.pdf,clear_monthly_period,VoltAir Industrial SA,2026-05-20,Licencias software período Mayo 2026,true,May 2026 / Mayo 2026,no,false,high,Demo: mes explícito (Mayo 2026).
+22_no_per_professional_fees_bloc_fem9n.pdf,no_period,Tide Marine Services Ltd,2026-04-06,Professional fees — block agreement,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+23_post_inv_servicios_prestados_en_6k4zi.pdf,posterior_invoice_prior_service,Rivera Transport SL,2026-05-05,Servicios prestados en Abril 2026,true,April 2026 / Abril 2026,no,false,high,Demo: factura posterior al servicio declarado.
+24_post_inv_servicios_prestados_en_5ifn4.pdf,posterior_invoice_prior_service,Cobalt Analytics SL,2026-05-07,Servicios prestados en Abril 2026,true,April 2026 / Abril 2026,no,false,high,Demo: factura posterior al servicio declarado.
+25_clear_es_consumo_cloud_facturac_74xaa.pdf,clear_monthly_period,CleanPro Facilities SL,2026-05-24,Consumo cloud facturación Mayo 2026,true,May 2026 / Mayo 2026,no,false,high,Demo: mes explícito (Mayo 2026).
+26_no_per_project_milestone_bill_fwewp.pdf,no_period,TechCore Solutions SL,2026-04-15,Project milestone billing,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+27_clear_es_auditoria_interna_febr_3h8eh.pdf,clear_monthly_period,Nordic Freight AB,2026-02-05,Auditoría interna Febrero 2026,true,February 2026 / Febrero 2026,no,false,high,Demo: mes explícito (Febrero 2026).
+28_ambig_services_rendered_7j4hx.pdf,ambiguous,Nimbus Labs SL,2026-03-08,Services rendered,false,not identified,no,true,not_detected,Demo: wording ambiguo; revisión manual.
+29_no_per_router_swap_field_serv_ffgxf.pdf,no_period,VoltAir Industrial SA,2026-04-20,Router swap — field service,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+30_range_suministro_energia_per_boh8f.pdf,clear_monthly_period,Aurora Catering SL,2026-04-26,Suministro energía período 2026-04-01 – 2026-04-30,true,2026-04-01 - 2026-04-30,no,false,high,Demo: rango ISO en concepto.
+31_clear_es_transporte_refrigerado_3v5v4.pdf,clear_monthly_period,BluePeak Software SL,2026-03-21,Transporte refrigerado Marzo 2026,true,March 2026 / Marzo 2026,no,false,high,Demo: mes explícito (Marzo 2026).
+32_no_per_professional_fees_bloc_8v8so.pdf,no_period,Summit Beverages SL,2026-04-05,Professional fees — block agreement,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+33_no_per_emergency_repair_servi_9xin7.pdf,no_period,Tide Marine Services Ltd,2026-04-19,Emergency repair services,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+34_no_per_project_milestone_bill_4svky.pdf,no_period,CleanPro Facilities SL,2026-04-23,Project milestone billing,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+35_no_per_miscellaneous_supplies_6ead0.pdf,no_period,Tide Marine Services Ltd,2026-04-14,Miscellaneous supplies,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.
+36_post_inv_servicios_prestados_en_brj6o.pdf,posterior_invoice_prior_service,Nordic Freight AB,2026-05-03,Servicios prestados en Abril 2026,true,April 2026 / Abril 2026,no,false,high,Demo: factura posterior al servicio declarado.
+37_multi_ln_training_workshops_mar_dj5vj.pdf,same_supplier_multiple_services,Nordic Freight AB,2026-03-16,Training workshops Marzo 2026,true,March 2026 / Marzo 2026 (Training workshops),no,false,high,"Demo: misma razón social, línea distinta."
+38_range_suministro_energia_per_fstks.pdf,clear_monthly_period,Meridian Healthcare SL,2026-04-29,Suministro energía período 2026-04-01 – 2026-04-30,true,2026-04-01 - 2026-04-30,no,false,high,Demo: rango ISO en concepto.
+39_ins_x_insurance_cover_01_06__g0704.pdf,multi_period,Nimbus Labs SL,2026-02-14,Insurance cover 01/06/2026 to 31/05/2027 — fleet policy,true,01/06/2026 - 31/05/2027,yes,true,high,Demo: póliza multi-ejercicio.
+40_no_per_project_milestone_bill_7sr17.pdf,no_period,Beacon Telecom SL,2026-04-21,Project milestone billing,false,not identified,no,true,not_detected,Demo: sin período claro en el texto.

@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# La API NO corre en Netlify: despliégala en Render (render.yaml) u otro Node.
+# Aquí debes definir la URL pública de esa API (sin barra final), luego "Clear cache and deploy":
+# Site settings → Environment variables → VITE_API_URL = https://tu-servicio.onrender.com
+#
+# [build.environment]
+#   VITE_API_URL = "https://accrualflow-ocr-api.onrender.com"
+
+# SPA (React Router): rutas como /ocr-test deben servir index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

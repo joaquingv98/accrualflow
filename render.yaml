@@ -1,0 +1,15 @@
+# Blueprint Render: API Express (OCR / analyze).
+# 1) Conecta el repo en https://dashboard.render.com → New → Blueprint
+# 2) Añade en el servicio la variable secreta OPENAI_API_KEY
+# 3) Copia la URL pública (ej. https://accrualflow-api.onrender.com)
+# 4) En Netlify: Site settings → Environment variables → VITE_API_URL = esa URL (sin / final) → Redeploy
+
+services:
+  - type: web
+    name: accrualflow-ocr-api
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
